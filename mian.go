@@ -30,6 +30,8 @@ type GameData struct {
 // export GOOS=windows
 // export GOARCH=amd64
 // go build -o makegamexml.exe && zip makegamecml.zip makegamexml.exe setting.ini template.xml
+
+// GOOS=windows GOARCH=amd64 CGO_ENABLED=1 CXX=x86_64-w64-mingw32-g++ CC=x86_64-w64-mingw32-gcc go build -o makegamexml.exe && zip makegamecml.zip makegamexml.exe setting.ini template.xml
 func main() {
 
 	cfg, err := ini.Load("./setting.ini")
@@ -114,7 +116,7 @@ func main() {
 		panic("template.xml 에 오류가 생겼습니다.")
 	}
 
-	ofile, err := os.Create("./output.xml")
+	ofile, err := os.Create("./gamelist.xml")
 	fmt.Print(err)
 
 	t1.Execute(ofile, gameDataList)
