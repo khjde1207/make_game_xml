@@ -1,16 +1,15 @@
-<contents>
-    <gameList>
-    {{range $val := .}} 
-        <game>
-            <path>./{{.FilePath}}</path>
-            <name>{{.Name}}</name>
-            <ImagePath>./downloaded_images/{{.ImagePath}}</ImagePath>
-            <VideoPath>./downloaded_videos/{{.VideoPath}}</VideoPath> 
-            <rating>0</rating>
-            <releasedate>{{.CreateTime}}</releasedate>
-            <playcount>0</playcount>
-            <lastplayed>{{.CreateTime}}</lastplayed>
-        </game>
-    {{end}}
-    </gameList> 
-</contents>
+<?xml version="1.0"?>
+<gameList>
+{{range $val := .}} 
+    <game>
+        <path>./{{.FilePath}}</path>
+        <name>{{.Name}}</name>
+        <image>./downloaded_images/{{.ImagePath}}</image>
+        <video>./downloaded_videos/{{.VideoPath}}</video> 
+        <rating>0</rating>
+        <releasedate>{{.CreateTime}}</releasedate>
+        <playcount>0</playcount>
+        <lastplayed>{{.CreateTime}}</lastplayed>
+    </game>
+{{end}}
+</gameList> 
