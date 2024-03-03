@@ -4,3 +4,7 @@ psp
 PSP
 tmp
 gamelist.xml
+*.iso
+*.cso
+*.ISO
+*.CSO

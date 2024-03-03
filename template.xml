@@ -1,7 +1,5 @@
-<?xml version="1.0"?>
 <gameList>
-{{range $val := .}} 
-    <game>
+    {{range $val := .}}<game>
         <path>./{{.FilePath}}</path>
         <name>{{.Name}}</name>
         <image>./downloaded_images/{{.ImagePath}}</image>
@@ -11,5 +9,5 @@
         <playcount>0</playcount>
         <lastplayed>{{.CreateTime}}</lastplayed>
     </game>
-{{end}}
+    {{end}}
 </gameList> 
