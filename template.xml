@@ -1,0 +1,16 @@
+<contents>
+    <gameList>
+    {{range $val := .}} 
+        <game>
+            <path>./{{.FilePath}}</path>
+            <name>{{.Name}}</name>
+            <ImagePath>./downloaded_images/{{.ImagePath}}</ImagePath>
+            <VideoPath>./downloaded_videos/{{.VideoPath}}</VideoPath> 
+            <rating>0</rating>
+            <releasedate>{{.CreateTime}}</releasedate>
+            <playcount>0</playcount>
+            <lastplayed>{{.CreateTime}}</lastplayed>
+        <game>
+    {{end}}
+    </gameList> 
+</contents>
