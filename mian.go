@@ -27,6 +27,8 @@ type GameData struct {
 	CreateTime string
 }
 
+// export GOOS=windows
+// export GOARCH=amd64
 // go build -o makegamexml.exe && zip makegamecml.zip makegamexml.exe setting.ini template.xml
 func main() {
 
