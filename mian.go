@@ -85,7 +85,7 @@ func main() {
 			}
 		}
 
-		VideoExList := []string{"mp4", "MP4", "MOV", "mov", "AVI", "avi"}
+		VideoExList := []string{"mp4", "MP4", "MOV", "mov", "AVI", "wmv", "WMV", "avi"}
 		for _, ex := range VideoExList {
 			var fpath = fmt.Sprint(video_folder, "/", gameData.Name, ".", ex)
 			fmt.Println(fpath)
