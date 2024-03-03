@@ -44,6 +44,7 @@ func main() {
 	image_folder := cfg.Section("info").Key("image_folder").String()
 	video_folder := cfg.Section("info").Key("video_folder").String()
 	createtime := cfg.Section("info").Key("CreateTime").String()
+	exs := strings.Split(cfg.Section("info").Key("ex").String(), ",")
 
 	println(game_folder)
 	println(image_folder)
@@ -65,7 +66,11 @@ func main() {
 	// }
 	gameDataList := []GameData{}
 	for _, gamefile := range gameDir {
+
 		if gamefile.IsDir() {
+			continue
+		}
+		if !checkEx(exs, filepath.Ext(gamefile.Name())) {
 			continue
 		}
 		gameData := GameData{}
@@ -92,10 +97,10 @@ func main() {
 		VideoExList := []string{"mp4", "MP4", "MOV", "mov", "AVI", "wmv", "WMV", "avi"}
 		for _, ex := range VideoExList {
 			var fpath = fmt.Sprint(video_folder, "/", gameData.Name, ".", ex)
-			fmt.Println(fpath)
+
 			if Exists(fpath) {
 				gameData.VideoPath = fmt.Sprint(gameData.Name, ".", ex)
-				fmt.Println(gameData.VideoPath)
+
 				break
 			}
 		}
@@ -121,6 +126,16 @@ func main() {
 
 	t1.Execute(ofile, gameDataList)
 
+}
+
+func checkEx(esList []string, fileEx string) bool {
+	fileEx = strings.ReplaceAll(fileEx, ".", "")
+	for _, ex := range esList {
+		if strings.Compare(strings.ToLower(ex), strings.ToLower(fileEx)) == 0 {
+			return true
+		}
+	}
+	return false
 }
 
 func fileNameWithoutExtTrimSuffix(fileName string) string {

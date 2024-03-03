@@ -1,4 +1,6 @@
 *.exe
 *.zip
 psp
+PSP
 tmp
+gamelist.xml
