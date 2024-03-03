@@ -10,7 +10,7 @@
             <releasedate>{{.CreateTime}}</releasedate>
             <playcount>0</playcount>
             <lastplayed>{{.CreateTime}}</lastplayed>
-        <game>
+        </game>
     {{end}}
     </gameList> 
 </contents>
