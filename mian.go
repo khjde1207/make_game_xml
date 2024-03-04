@@ -31,7 +31,7 @@ type GameData struct {
 // export GOARCH=amd64
 // go build -o makegamexml.exe && zip makegamecml.zip makegamexml.exe setting.ini template.xml
 
-// GOOS=windows GOARCH=amd64 CGO_ENABLED=1 CXX=x86_64-w64-mingw32-g++ CC=x86_64-w64-mingw32-gcc go build -o makegamexml.exe && zip makegamecml.zip makegamexml.exe setting.ini template.xml
+// GOOS=windows GOARCH=amd64 CGO_ENABLED=1 CXX=x86_64-w64-mingw32-g++ CC=x86_64-w64-mingw32-gcc go build -o makegamexml.exe && zip makegamexml.zip makegamexml.exe setting.ini template.xml
 func main() {
 
 	cfg, err := ini.Load("./setting.ini")
