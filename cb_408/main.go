@@ -59,6 +59,7 @@ var collectionMap = map[string]CollectionData{
 	"ARCADE": CollectionData{
 		Name:    "ARCADE",
 		Dirname: "ARCADE",
+		Core:    "RetroArch FB Alpha 2012",
 		Emulator: []EmulatorData{
 			EmulatorData{
 				CoreName:    "RetroArch FinalBurn Neo",
@@ -80,6 +81,7 @@ var collectionMap = map[string]CollectionData{
 	"ATARI2600": CollectionData{
 		Name:    "A2600",
 		Dirname: "A2600\\nATARI 2600\\nATARI2600",
+		Core:    "RetroArch Stella 2014",
 		Emulator: []EmulatorData{
 			EmulatorData{
 				CoreName:    "RetroArch Stella",
@@ -96,6 +98,7 @@ var collectionMap = map[string]CollectionData{
 	"ATARI5200": CollectionData{
 		Name:    "A5200",
 		Dirname: "A5200\\nATARI 5200\\nATARI5200",
+		Core:    "RetroArch a5200",
 		Emulator: []EmulatorData{
 			EmulatorData{
 				CoreName:    "RetroArch Atari800",
@@ -123,6 +126,7 @@ var collectionMap = map[string]CollectionData{
 	"ATARILYNX": CollectionData{
 		Name:    "LYNX",
 		Dirname: "LYNX\\nATARI LYNX\\nATARILYNX",
+		Core:    "RetroArch Beetle Lynx",
 		Emulator: []EmulatorData{
 			EmulatorData{
 				CoreName:    "RetroArch Handy",
@@ -139,6 +143,7 @@ var collectionMap = map[string]CollectionData{
 	"CPS1": CollectionData{
 		Name:    "CPS1",
 		Dirname: "CPS1",
+		Core:    "RetroArch FB Alpha 2012",
 		Emulator: []EmulatorData{
 			EmulatorData{
 				CoreName:    "RetroArch FinalBurn Alpha",
@@ -166,6 +171,7 @@ var collectionMap = map[string]CollectionData{
 	"CPS3": CollectionData{
 		Name:    "CPS3",
 		Dirname: "CPS3",
+		Core:    "RetroArch FinalBurn Alpha",
 		Emulator: []EmulatorData{
 			EmulatorData{
 				CoreName:    "RetroArch FinalBurn Neo",
@@ -197,6 +203,7 @@ var collectionMap = map[string]CollectionData{
 	"DC": CollectionData{
 		Name:    "DC",
 		Dirname: "DC\\nDC HACK\\nDREAMCAST",
+		Core:    "Flycast",
 		Emulator: []EmulatorData{
 			EmulatorData{
 				CoreName:    "RetroArch Flycast",
@@ -213,6 +220,7 @@ var collectionMap = map[string]CollectionData{
 	"FBNEO": CollectionData{
 		Name:    "FBNEO",
 		Dirname: "FBNEO\\nFBNEO ARCADE\\nFBNEOARCADE",
+		Core:    "RetroArch FinalBurn Alpha",
 		Emulator: []EmulatorData{
 			EmulatorData{
 				CoreName:    "RetroArch FinalBurn Neo",
@@ -229,6 +237,8 @@ var collectionMap = map[string]CollectionData{
 	"FBNEO ACT": CollectionData{
 		Name:    "AACT",
 		Dirname: "AACT\\nFBNEO ACT\\nFBNEO ACT V\\nFBNEO ACT HACK\\nMAME ACT",
+		Core:    "RetroArch FinalBurn Alpha",
+
 		Emulator: []EmulatorData{
 			EmulatorData{
 				CoreName:    "RetroArch FinalBurn Neo",
@@ -250,6 +260,7 @@ var collectionMap = map[string]CollectionData{
 	"FBNEO ETC": CollectionData{
 		Name:    "AETC",
 		Dirname: "AETC\\nFBNEO ETC\\nFBNEO ETC V\\nMAME ETC",
+		Core:    "RetroArch MAME (Git)",
 		Emulator: []EmulatorData{
 			EmulatorData{
 				CoreName:    "RetroArch FinalBurn Neo",
@@ -272,6 +283,7 @@ var collectionMap = map[string]CollectionData{
 		Name:       "AFLY",
 		Dirname:    "AFLY\\nFBNEO FLY\\nFBNEO FLY V\\nMAME FLY\\nMAME FLY V",
 		Extensions: "7z, zip",
+		Core:       "RetroArch MAME (Git)",
 		Emulator: []EmulatorData{
 			EmulatorData{
 				CoreName:    "RetroArch FinalBurn Neo",
@@ -299,6 +311,7 @@ var collectionMap = map[string]CollectionData{
 		Name:       "AFTG",
 		Dirname:    "AFTG\\nFBNEO FTG\\nFBNEO FTG HACK\\nMAME FTG\\nMAME FTG HACK",
 		Extensions: "7z, zip",
+		Core:       "RetroArch FB Alpha 2012",
 		Emulator: []EmulatorData{
 			EmulatorData{
 				CoreName:    "RetroArch FinalBurn Neo",
@@ -326,6 +339,7 @@ var collectionMap = map[string]CollectionData{
 		Name:       "ASTG",
 		Dirname:    "ASTG\\nFBNEO STG\\nFBNEO STG V\\nFBNEO STG HACK\\nMAME STG\\nMAME STG V",
 		Extensions: "7z, zip",
+		Core:       "RetroArch MAME (Git)",
 		Emulator: []EmulatorData{
 			EmulatorData{
 				CoreName:    "RetroArch FinalBurn Neo",
@@ -353,6 +367,7 @@ var collectionMap = map[string]CollectionData{
 		Name:       "FC",
 		Dirname:    "FC",
 		Extensions: "nes, 7z, zip",
+		Core:       "RetroArch FCEUmm",
 		Emulator: []EmulatorData{
 			EmulatorData{
 				CoreName:    "RetroArch Nestopia",
@@ -379,6 +394,7 @@ var collectionMap = map[string]CollectionData{
 	"GAMEGEAR": CollectionData{
 		Name:    "GG",
 		Dirname: "GG\\nGAME GEAR\\nGAMEGEAR",
+		Core:    "RetroArch PicoDrive",
 		Emulator: []EmulatorData{
 			EmulatorData{
 				CoreName:    "RetroArch SMS Plus GX",
@@ -410,6 +426,7 @@ var collectionMap = map[string]CollectionData{
 	"GB": CollectionData{
 		Name:    "GB",
 		Dirname: "GB",
+		Core:    "RetroArch mGBA",
 		Emulator: []EmulatorData{
 			EmulatorData{
 				CoreName:    "RetroArch Gambatte",
@@ -446,6 +463,7 @@ var collectionMap = map[string]CollectionData{
 	"GBA": CollectionData{
 		Name:    "GBA",
 		Dirname: "GBA",
+		Core:    "RetroArch mGBA",
 		Emulator: []EmulatorData{
 			EmulatorData{
 				CoreName:    "RetroArch gpSP",
@@ -472,6 +490,7 @@ var collectionMap = map[string]CollectionData{
 	"GBC": CollectionData{
 		Name:    "GBC",
 		Dirname: "GBC",
+		Core:    "RetroArch Mesen-S",
 		Emulator: []EmulatorData{
 			EmulatorData{
 				CoreName:    "RetroArch Gambatte",
@@ -539,6 +558,7 @@ var collectionMap = map[string]CollectionData{
 	"GG": CollectionData{
 		Name:    "GG",
 		Dirname: "GG\\nGAME GEAR\\nGAMEGEAR",
+		Core:    "RetroArch PicoDrive",
 		Emulator: []EmulatorData{
 			EmulatorData{
 				CoreName:    "RetroArch SMS Plus GX",
@@ -570,6 +590,7 @@ var collectionMap = map[string]CollectionData{
 	"LYNX": CollectionData{
 		Name:    "LYNX",
 		Dirname: "LYNX\\nATARI LYNX\\nATARILYNX",
+		Core:    "RetroArch Beetle Lynx",
 		Emulator: []EmulatorData{
 			EmulatorData{
 				CoreName:    "RetroArch Handy",
@@ -586,6 +607,7 @@ var collectionMap = map[string]CollectionData{
 	"MAME": CollectionData{
 		Name:    "MAME",
 		Dirname: "MAME\\nMAME ARCADE\\nMAMEARCADE",
+		Core:    "RetroArch MAME 2010 (0.139)",
 		Emulator: []EmulatorData{
 			EmulatorData{
 				CoreName:    "RetroArch FinalBurn Neo",
@@ -617,6 +639,7 @@ var collectionMap = map[string]CollectionData{
 	"MD": CollectionData{
 		Name:    "MD",
 		Dirname: "MD\\nMEGA DRIVE\\nMEGADRIVE",
+		Core:    "RetroArch PicoDrive",
 		Emulator: []EmulatorData{
 			EmulatorData{
 				CoreName:    "RetroArch BlastEm",
@@ -643,6 +666,7 @@ var collectionMap = map[string]CollectionData{
 	"MEGADRIVE": CollectionData{
 		Name:    "MD",
 		Dirname: "MD\\nMEGA DRIVE\\nMEGADRIVE",
+		Core:    "RetroArch PicoDrive",
 		Emulator: []EmulatorData{
 			EmulatorData{
 				CoreName:    "RetroArch BlastEm",
@@ -669,6 +693,7 @@ var collectionMap = map[string]CollectionData{
 	"N64": CollectionData{
 		Name:    "N64",
 		Dirname: "N64",
+		Core:    "Mupen64Plus",
 		Emulator: []EmulatorData{
 			EmulatorData{
 				CoreName:    "RetroArch Mupen64Plus-Next",
@@ -690,6 +715,7 @@ var collectionMap = map[string]CollectionData{
 	"NAOMI": CollectionData{
 		Name:    "NAOMI",
 		Dirname: "NAOMI",
+
 		Emulator: []EmulatorData{
 			EmulatorData{
 				CoreName:    "RetroArch Flycast",
@@ -701,6 +727,7 @@ var collectionMap = map[string]CollectionData{
 	"NES": CollectionData{
 		Name:    "NES",
 		Dirname: "NES",
+		Core:    "RetroArch QuickNES",
 		Emulator: []EmulatorData{
 			EmulatorData{
 				CoreName:    "RetroArch FCEUmm",
@@ -743,6 +770,7 @@ var collectionMap = map[string]CollectionData{
 	"PCE": CollectionData{
 		Name:    "PCE",
 		Dirname: "PCE\\nPCE NGINE\\nPCENGINE",
+		Core:    "RetroArch Beetle SuperGrafx",
 		Emulator: []EmulatorData{
 			EmulatorData{
 				CoreName:    "RetroArch Beetle PCE Fast",
@@ -764,6 +792,7 @@ var collectionMap = map[string]CollectionData{
 	"PCENGINE": CollectionData{
 		Name:    "PCE",
 		Dirname: "PCE\\nPCE NGINE\\nPCENGINE",
+		Core:    "RetroArch Beetle SuperGrafx",
 		Emulator: []EmulatorData{
 			EmulatorData{
 				CoreName:    "RetroArch Beetle PCE Fast",
@@ -785,6 +814,7 @@ var collectionMap = map[string]CollectionData{
 	"PS1": CollectionData{
 		Name:    "PS1",
 		Dirname: "PS1\\nPSX\\nPS1 HACK",
+		Core:    "PCSX-ReARMed",
 		Emulator: []EmulatorData{
 			EmulatorData{
 				CoreName:    "RetroArch SwanStation",
@@ -801,6 +831,7 @@ var collectionMap = map[string]CollectionData{
 	"PSP": CollectionData{
 		Name:    "PSP",
 		Dirname: "PSP",
+		Core:    "PPSSPP",
 		Emulator: []EmulatorData{
 			EmulatorData{
 				CoreName:    "RetroArch PPSSPP",
@@ -817,6 +848,7 @@ var collectionMap = map[string]CollectionData{
 	"SFC": CollectionData{
 		Name:    "SFC",
 		Dirname: "SFC",
+		Core:    "RetroArch Stella",
 		Emulator: []EmulatorData{
 			EmulatorData{
 				CoreName:    "RetroArch Snes9x",
@@ -844,6 +876,7 @@ var collectionMap = map[string]CollectionData{
 	"SNES": CollectionData{
 		Name:    "SNES",
 		Dirname: "SNES",
+		Core:    "RetroArch Stella",
 		Emulator: []EmulatorData{
 			EmulatorData{
 				CoreName:    "RetroArch Snes9x",
@@ -889,6 +922,7 @@ type CollectionData struct {
 	Extensions string
 	Emulator   []EmulatorData
 	Roms       []RomData
+	Core       string
 }
 
 type EmulatorData struct {
@@ -917,6 +951,7 @@ var rootData = `
 		{{end}}
 	],
 	"Roms": [
+		{{$rootCore := .Core}}
 		{{$lenMyList := len .Roms}}{{range $index, $var := .Roms}}{
 			"Id": "{{.Name}}",
 			"Files": [
@@ -928,6 +963,7 @@ var rootData = `
 				"en_US": "{{.Name}}",
 				"ko_KR": "{{.Name}}"
 			},
+			{{if ne $rootCore  ""}}"Core": "{{$rootCore}}",{{end}}
 			"Flag": 1,
 			"MD5": "",
 			"Search": {}
